@@ -36,7 +36,7 @@
         </nav>
         <!-- Home -->
         <section id="Home">
-            <img src="imgs/myPicture.jpeg" 
+            <img src="imgs/myPicture-400x599.jpeg" 
             alt="Sejin's profile photo" 
             class="home__avatar">
             <h1 class="home__title">Welcome,<br>
@@ -47,17 +47,17 @@
             <button class="home__contact">Contact Me</button>
         </section>
         <!-- About Me -->
-        <section id="about">
+        <section id="about" class="section section__container">
             <h1>About Me</h1>
-            <p>Interested in Engineering, Music, Producing...
-                self-description
+            <p>See what you wanna live,<br>
+                Eager to be Great
             </p>
             <div class="about__majors">
                 <div class="major">
                     <div class="major__icon">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
-                    <div class="major__title">Industrial Engineering</div>
+                    <h2 class="major__title">Industrial Engineering</h2>
                     <div class="major__description">
                         System, Optimization, Design
                     </div>
@@ -66,45 +66,51 @@
                     <div class="major__icon">
                         <i class="fa-solid fa-keyboard"></i>
                     </div>
-                    <div class="major__title">Programming</div>
+                    <h2 class="major__title">Programming</h2>
                     <div class="major__description">
-                        programmingnininininining
+                        Software Architecture, AI, Data Analytics
                     </div>
                 </div>
                 <div class="major">
                     <div class="major__icon">
                         <i class="fa-solid fa-music"></i>
                     </div>
-                    <div class="major__title">Musician</div>
+                    <h2 class="major__title">Musician</h2>
                     <div class="major__description">
-                        musicccccc
+                        Piano, Producing, Mix & Mastering
                     </div>
                 </div>
             </div>
             <div class="about__jobs">
                 <div class="job">
                     <img src="imgs/ajouLogo.png" alt="AJou University" class="job__logo">
-                    <p class="job__name">
-                        AI-자동화시스템 연구실 - 학부 연구생, 연구실 학생장
-                    </p>
-                    <p class="job__period">
-                        22.02-10
-                    </p>
+                    <div class="job__description">
+                        <p class="job__name">
+                            AI-자동화시스템 연구실 - 학부 연구생, 연구실 학생장
+                        </p>
+                        <p class="job__period">
+                            22.02-10
+                        </p>
+                    </div>
                 </div>
                 <div class="job">
                     <img src="imgs/soulLogo.png" alt="" class="job__logo">
-                    <p class="job__name">
-                        흑인 음악 동아리 "Soul"  - Piano, Producer Leader
-                    </p>
-                    <p class="job__period">
-                        22.03-12
-                    </p>
+                    <div class="job__description">
+                        <p class="job__name">
+                            흑인 음악 동아리 "Soul"  - Piano, Producer Leader
+                        </p>
+                        <p class="job__period">
+                            22.03-12
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
         </section>
         <!-- Skills -->
-        <section id="skills">
-            <h1>Skills</h1>
+        <section id="skills" class="section">
+            <div class="section__container">
+                <h1>Skills</h1>
             <h2>Skills & Attributes</h2>
             <p>
                 This is My Skills.... 
@@ -114,21 +120,21 @@
                 <div class="skillset__left">
                     <h3 class="skillset__title">Skills</h3>
                     <div class="skill">
-                        <div class="skill_description">
+                        <div class="skill__description">
                             <span>Programming</span>
                             <span>80%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value"></div>
+                            <div class="skill__value" style="width:80%"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill_description">
+                        <div class="skill__description">
                             <span>Producing</span>
                             <span>90%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value"></div>
+                            <div class="skill__value" style="width:90%"></div>
                         </div>
                     </div>
                 </div>
@@ -161,10 +167,12 @@
                 </div>
 
             </div>
+            </div>
+            
 
         </section>
         <!-- Project -->
-        <section id="Project">
+        <section id="Project" class="section">
             <h1>My Projects</h1>
             <h3>Project List</h3>
             <div class="work__categories">
@@ -199,7 +207,7 @@
         </section>
 
         <!-- Career -->
-        <section id="Career">
+        <section id="Career" class="section">
             <h1>Career</h1>
             <h2>My footstep during my lifetime</h2>
             <div class="careers">
@@ -219,7 +227,7 @@
         </section>
 
         <!-- Contact -->
-        <section id="Contact">
+        <section id="Contact" class="section">
             <h1>Contact</h1>
             <h2>Link for my website</h2>
             <div class="links">
