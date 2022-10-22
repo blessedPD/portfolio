@@ -48,3 +48,19 @@ document.addEventListener('scroll',()=>{
     let scrollY = window.scrollY;
     homeMenu.style.opacity = 1- scrollY/homeMenuHeight;
 });
+
+//Show Up-Arrow Button when scrolling down, 
+//and when Show Up-Arrow Button is clicked, Go to Top Page
+
+const arrowUp =document.querySelector(".arrow-up");
+document.addEventListener('scroll',()=>{
+    if (window.scrollY > homeMenuHeight){
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');
+    }
+});
+
+arrowUp.addEventListener('click',()=>{
+    scrollIntoView('#Home');
+});
