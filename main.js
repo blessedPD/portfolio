@@ -18,32 +18,21 @@ const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click',(event)=>{
     
     const target = event.target;
-    const link = target.dataset.link;
+    const link = target.dataset.link; //data 활용
     if (link==null){
         return;
     }else{
-        const scrollTo = document.querySelector(link);
-        scrollTo.scrollIntoView({behavior:'smooth'});
+        scrollIntoView(link);
     }
     
 });
 
-/*
-document.addEventListener('click',(event)=>{
-    let id = event.target.id;
-    let className = event.target.className;
-    console.log(id);
-
-    if (className="navbar__menu__item"){
-        if (id=="menu_item_0"){
-            
-        }else if (id=="menu_item_1"){
-            let el = document.getElementById("about");
-            
-            window.scrollTo(0,el.offsetTop-document.getElementById("navbar").offsetHeight);
-        }else if (id=="menu_item_2"){
-
-        }
-    }
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click',(event)=>{
+    scrollIntoView('#Contact')
 });
-*/
+
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:'smooth'});
+}
