@@ -36,3 +36,15 @@ function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:'smooth'});
 }
+
+
+//Make home slowly fade to transparent as the window scrolls down
+
+
+const homeMenu = document.querySelector('.home__container');
+const homeMenuHeight = homeMenu.getBoundingClientRect().height;
+
+document.addEventListener('scroll',()=>{
+    let scrollY = window.scrollY;
+    homeMenu.style.opacity = 1- scrollY/homeMenuHeight;
+});
