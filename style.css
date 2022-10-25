@@ -265,7 +265,7 @@ p{
 }
 
 #skills{
-    background-color: var(--color-yellow);
+    background-color: var(--color-appleGrayHover);
 }
 
 .skillset{
@@ -332,18 +332,18 @@ p{
 
 .category__btn.selected,
 .category__btn:hover{
-    background-color: var(--color-pink);
+    background-color: var(--color-light-grey);
     color: var(--color-white);
 }
 
 .category__btn.selected .category__count,
 .category__btn:hover .category__count{
     opacity: 1;
-    top: 0;
+    top: -2px;
 }
 
 .category__count{
-    background-color: var(--color-orange);
+    background-color: var(--color-iconBlue);
     border-radius: 50%;
     color: var(--color-white);
     width : 24px;
@@ -371,7 +371,9 @@ p{
     transform: scale(0.96) translateY(40px);
 }
 
-
+#Project{
+    background-color: var(--color-light-white);
+}
 .project{
     position: relative;
     display: flex;
@@ -432,7 +434,13 @@ p{
 }
 
 #Career {
-    background-color: var(--color-light-white);
+    background-color: var(--color-black);
+    color: white;
+}
+
+#Career h1,
+#Career h2{
+    color: white;
 }
 
 .careers{
@@ -441,7 +449,7 @@ p{
 
 /* Contact */
 #Contact{
-    background-color: var(--color-pink);
+    background-color: var(--color-dark-white);
 }
 
 .contact__title,
@@ -451,6 +459,7 @@ p{
 
 .contact__title{
     margin: 32px 0;
+    color: black;
 }
 
 .contact__links{
@@ -460,9 +469,8 @@ p{
 }
 
 .contact__links i:hover{
-    transform: scale(1.1);
-    color: var(--color-yellow);
-    
+    transform: scale(1.2);
+    color: var(--color-iconBlue);
 }
 /* Scroll*/
 .arrow-up{
